@@ -1,0 +1,45 @@
+// Columnus
+
+@import 'nib'
+
+// Functions
+
+grid(class = 'lg', columns = 24)
+    // Iterate through our columns
+    for colCount in (1 .. columns)
+        // Convert each column count to a percentage: i.e. 1/12
+        percentWidth = 1% * ((colCount / columns) * 100)
+        // Column class for the width
+        .col_{class}_{colCount}
+            width percentWidth
+            float left
+            padding 0 1em
+            &:first-child
+                padding-left 0
+            &:last-child
+                padding-right 0
+            img
+                max-width 100%
+                ms-interpolation-mode bicubic
+
+.grid
+    clearfix()
+    list-style none
+    *
+        box-sizing border-box
+  
+grid()
+
+@media (max-width: 60em)
+    grid('mdx')
+
+@media (max-width: 47.5em)
+    grid('md')
+
+@media (max-width: 30em)
+    grid('sm')
+
+    .grid
+        *
+            text-align center
+

@@ -1,0 +1,58 @@
+// Columnus
+// ===========
+
+// Based on the 12 column nestable Foundation Grid:
+// http://foundation.zurb.com/docs/components/grid.html
+// -----------------------------------------------------------------------------
+
+// Imports
+// -------
+
+// Requires nib, unless you would rather handle the vendor prefixes yourself
+@import 'nib'
+
+// Functions
+// ---------
+
+grid(class = 'large', columns = 12)
+    // Iterate through our columns
+    for colCount in (1 .. columns)
+        // Convert each column count to a percentage: i.e. 1/12
+        percentWidth = 1% * ((colCount / columns) * 100)
+        // Column class for the width
+        .l_{class}_{colCount}
+            width percentWidth
+            float left
+            padding 0 1em
+            &:first-child
+                padding-left 0
+            &:last-child
+                padding-right 0
+            img
+                max-width 100%
+                ms-interpolation-mode bicubic
+
+.l_grid
+    overflow hidden
+
+.l_grid
+    clearfix()
+    list-style none
+    *
+        box-sizing border-box
+  
+grid()
+
+@media (max-width: 60em)
+    grid('mdx')
+
+@media (max-width: 47.5em)
+    grid('md')
+
+@media (max-width: 30em)
+    grid('sm')
+
+    .l_grid
+        *
+            text-align center
+
