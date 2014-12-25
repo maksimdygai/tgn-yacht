@@ -37,3 +37,24 @@ for row in 1 .. 15
 for row in 1 .. 10
     .width-{row}
         width 10% * row !important
+        
+.vcenter
+    display table
+    &__container
+        display table-cell
+        vertical-align middle
+
+.flexible-frame-wrapper
+    position relative
+    height 0
+    padding-bottom 78.8%
+    iframe
+        position absolute
+        top 0 
+        left 0 
+        right 0 
+        bottom 0
+        
+.two-media-height
+    height 220px
+        

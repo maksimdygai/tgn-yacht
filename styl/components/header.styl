@@ -4,21 +4,24 @@
     text-align center
     
 .main-nav
-    margin 0 0 20px 0
+    margin 20px 0
     padding 10px 0
-    border-bottom 1px solid
     &__list
         clearfix()
+        display inline-block
         list-style none
         margin 0
         padding 0
+        border 1px solid
     &__item
         display inline-block
     &__link
         display inline-block
-        padding 10px
+        padding 15px
         font-size 24px
-        font-family 'Oranienbaum', serif
+        transition background .2s ease
+        &:hover
+            background rgba(51, 51, 51, .6)
     
 .logo
     width 250px

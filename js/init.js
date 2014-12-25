@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 	var ascensor = $('#sections').ascensor({
-			ascensorFloorName: ['home', 'crew', 'yachts', 'travel','contacts']
+		ascensorFloorName: ['home', 'crew', 'yachts', 'travel','contacts']
 	});
 
 	var ascensorInstance = ascensor.data('ascensor');
@@ -14,5 +14,13 @@ $(document).ready(function() {
 	        ascensorInstance.next();
 	    }
 	});
+
+	// var memberPhoto = $(document).find('.member__photo');
+	
+	// function setTitle() {
+	// 	this.attr('title', this.siblings('.member__name').text());
+	// }
+
+	// memberPhoto.setTitle();
 
 });
