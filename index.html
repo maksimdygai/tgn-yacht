@@ -6,141 +6,138 @@
 	<link rel="icon" type="image/png" href="img/main/favicon.png" />
 	<link rel="stylesheet" href="css/main.css">
 	<script src="js/jquery-1.11.1.min.js"></script>
-	<script src="js/jquery.ascensor.min.js"></script>
 	<script src="js/init.js"></script>
 </head>
 <body>
-	<div id="sections">
-		<div class="home">
-			<header class="header">
-				<nav class="main-nav">
-					<ul class="main-nav__list">
-						<li class="main-nav__item"><a href="#crew" class="main-nav__link">команда</a></li>
-						<li class="main-nav__item"><a href="#yachts" class="main-nav__link">яхты</a></li>
-						<li class="main-nav__item"><a href="#travel" class="main-nav__link">регаты</a></li>
-						<li class="main-nav__item"><a href="#contacts" class="main-nav__link">контакты</a></li>
-						<!-- <li class="main-nav__item"><a href="#" class="main-nav__link"></a></li> -->
-					</ul>
-				</nav>
-				<img src="img/main/logo.png" alt="" class="logo">
-			</header>
-		</div>
-		<div class="crew">
-			<h1 class="main_heading">Команда</h1>
-			<div class="container">
-				<div class="grid">
-					<div class="col_lg_8">
-						<div class="member">
-							<img src="img/members/roman_dubovik.jpg" alt="" class="member__photo">
-							<h1 class="member__name">Роман Юрьевич Дубовик</h1>
-							<p class="member__rank">Инструктор, штурман</p>
-						</div>
-						<div class="member">
-							<img src="img/members/danil_kovtun.jpg" alt="" class="member__photo">
-							<h1 class="member__name">Данил Ковтун</h1>
-							<p class="member__rank">Матрос</p>
-						</div>
-						<div class="member">
-							<img src="img/members/gennadiy_li.jpg" alt="" class="member__photo">
-							<h1 class="member__name">Геннадий Лисовой</h1>
-							<p class="member__rank">Матрос</p>
-						</div>
-						<div class="member">
-							<img src="img/members/maksim_dygai.jpg" alt="" class="member__photo">
-							<h1 class="member__name">Максим Дыгай</h1>
-							<p class="member__rank">Матрос</p>
-						</div>
-					</div>
-					<div class="col_lg_8">
-						<div class="member">
-							<img src="img/members/sergey_arsentiev.jpg" alt="" class="member__photo">
-							<h1 class="member__name">Сергей Арсентьев</h1>
-							<p class="member__rank">Матрос</p>
-						</div>
-						<div class="member">
-							<img src="img/members/petr_petrovich.jpg" alt="" class="member__photo">
-							<h1 class="member__name">Петр Клюшников</h1>
-							<p class="member__rank">Матрос</p>
-						</div>
-						<div class="member">
-							<img src="img/members/dmitry_nekraschuk.jpg" alt="" class="member__photo">
-							<h1 class="member__name">Дмитрий Некращук</h1>
-							<p class="member__rank">Матрос</p>
-						</div>
-					</div>
-					<div class="col_lg_8">
-						<p class="text-block vcenter two-media-height"><span class="vcenter__container">В Таганроге действительно есть яхты не только для катания, но и в распоряжении команды яхтсменов. Если ты готов учиться — тебе стоит попробовать. </span></p>
-						<div class="member">
-							<img src="img/members/danil_kolotev.jpg" alt="" class="member__photo">
-							<h1 class="member__name">Даниил Колотев</h1>
-							<p class="member__rank">Матрос</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="yachts">
-			<h1 class="main_heading">Яхты</h1>
-			<div class="media">
-				<div class="media-item">
-					<img src="img/yachts/integral.jpg" alt="Интеграл" class="media-item__img" />
-					<h1 class="media-item__heading">Интеграл</h1>
-					<p class="media-item__text">Гоночно-крейсерская яхта</p>
-				</div>
-				<div class="media-item">
-					<img src="img/yachts/burevestnik.jpg" alt="Буревестник" class="media-item__img" />
-					<h1 class="media-item__heading">Буревестник</h1>
-					<p class="media-item__text">Туристическо-крейсерская яхта</p>
-				</div>
-			</div>
-		</div>
-		<div class="travel">
-			<h1 class="main_heading">Регаты</h1>
-			<div class="media">
-				<figure class="figure">
-					<img src="img/regattas/sevastopol.jpg" alt="" class="figure__img">
-					<figcaption class="figure__caption">
-						<h1 class="figure__heading">Севастополь</h1>
-						<p class="figure__text">Июль 2014</p>
-					</figcaption>
-				</figure>
-				<figure class="figure">
-					<img src="img/regattas/gelendzhik.jpg" alt="" class="figure__img">
-					<figcaption class="figure__caption">
-						<h1 class="figure__heading">Геленджик</h1>
-						<p class="figure__text">
-							Сентябрь 2014 &#8226;
-							<a href="gelendzhik.html" class="figure__link">Фото</a>
-						</p>
-					</figcaption>
-				</figure>
-			</div>
-		</div>
-		<div class="contacts">
-			<h1 class="main_heading main_heading_white">Контакты</h1>
-			<div class="grid">
+	<div class="section home">
+		<header class="header">
+			<img src="img/main/ychttgn-tiny.png" alt="" class="logo">
+			<nav class="main-nav">
+				<ul class="main-nav__list">
+					<li class="main-nav__item"><a href="#crew" class="main-nav__link"><span>команда</span></a></li>
+					<li class="main-nav__item"><a href="#yachts" class="main-nav__link"><span>яхты</span></a></li>
+					<li class="main-nav__item"><a href="#travel" class="main-nav__link"><span>регаты</span></a></li>
+					<li class="main-nav__item"><a href="#contacts" class="main-nav__link"><span>контакты</span></a></li>
+					<!-- <li class="main-nav__item"><a href="#" class="main-nav__link"></a></li> -->
+				</ul>
+			</nav>
+		</header>
+	</div>
+	<div id="crew" class="section crew">
+		<h1 class="main_heading">Команда</h1>
+		<div class="container">
+			<div class="grid members">
 				<div class="col_lg_8">
-					<img src="img/contacts/yard_inside.jpg" alt="" class="contacts-img-left" />
-				</div>
-				<div class="col_lg_8">
-					<div class="flexible-frame-wrapper">
-						<iframe id="map" frameborder="0"  src="https://www.google.com/maps/embed/v1/search?q=47.207527%2C%2038.952421&key=AIzaSyAo7HPX2KgmkUsiJU_LUzkfuWrVjAhgsE4"></iframe>
+					<div class="member">
+						<img src="img/members/roman_dubovik.jpg" alt="" class="member__photo">
+						<h1 class="member__name">Роман Юрьевич Дубовик</h1>
+						<p class="member__rank">Инструктор, штурман</p>
+					</div>
+					<div class="member">
+						<img src="img/members/danil_kovtun.jpg" alt="" class="member__photo">
+						<h1 class="member__name">Данил Ковтун</h1>
+						<p class="member__rank">Матрос</p>
+					</div>
+					<div class="member">
+						<img src="img/members/gennadiy_li.jpg" alt="" class="member__photo">
+						<h1 class="member__name">Геннадий Лисовой</h1>
+						<p class="member__rank">Матрос</p>
+					</div>
+					<div class="member">
+						<img src="img/members/maksim_dygai.jpg" alt="" class="member__photo">
+						<h1 class="member__name">Максим Дыгай</h1>
+						<p class="member__rank">Матрос</p>
 					</div>
 				</div>
 				<div class="col_lg_8">
-					<img src="img/contacts/yard_waterside.jpg" alt="" class="contacts-img-right" />
+					<div class="member">
+						<img src="img/members/sergey_arsentiev.jpg" alt="" class="member__photo">
+						<h1 class="member__name">Сергей Арсентьев</h1>
+						<p class="member__rank">Матрос</p>
+					</div>
+					<div class="member">
+						<img src="img/members/petr_petrovich.jpg" alt="" class="member__photo">
+						<h1 class="member__name">Петр Клюшников</h1>
+						<p class="member__rank">Матрос</p>
+					</div>
+					<div class="member">
+						<img src="img/members/dmitry_nekraschuk.jpg" alt="" class="member__photo">
+						<h1 class="member__name">Дмитрий Некращук</h1>
+						<p class="member__rank">Матрос</p>
+					</div>
+				</div>
+				<div class="col_lg_8">
+					<p class="text-block vcenter two-media-height"><span class="vcenter__container">В Таганроге действительно есть яхты не только для катания, но и в распоряжении команды яхтсменов. Если ты готов учиться — тебе стоит попробовать. </span></p>
+					<div class="member">
+						<img src="img/members/danil_kolotev.jpg" alt="" class="member__photo">
+						<h1 class="member__name">Даниил Колотев</h1>
+						<p class="member__rank">Матрос</p>
+					</div>
 				</div>
 			</div>
-			<ul class="contacts">
-				<li class="contacts__item">Напиши нам <a href="http://vk.com/kovtundanill" class="contacts__link"><img src="img/icons/vk.png" alt="VK" class="contacts__icon"/></a></li>
-				<!-- <li class="contacts__item"><a href="#" class="contacts__link">47.12271 // 38.57087</a></li> -->
-			</ul>
-			<footer class="main-footer">
-				<section class="creds">
-					<a href="http://maksimdygai.github.io/"><img src="img/main/Maksim-Dygai-Crossed-tiny-white-10-10-2014.png" alt="Made by DYGVI" class="dygai_cred" /></a>
-				</section>
-			</footer>
 		</div>
+	</div>
+	<div id="yachts" class="section yachts">
+		<h1 class="main_heading">Яхты</h1>
+		<div class="media">
+			<div class="media-item">
+				<img src="img/yachts/integral.jpg" alt="Интеграл" class="media-item__img" />
+				<h1 class="media-item__heading">Интеграл</h1>
+				<p class="media-item__text">Гоночно-крейсерская яхта</p>
+			</div>
+			<div class="media-item">
+				<img src="img/yachts/burevestnik.jpg" alt="Буревестник" class="media-item__img" />
+				<h1 class="media-item__heading">Буревестник</h1>
+				<p class="media-item__text">Туристическо-крейсерская яхта</p>
+			</div>
+		</div>
+	</div>
+	<div id="regattas" class="section travel">
+		<h1 class="main_heading">Регаты</h1>
+		<div class="media">
+			<figure class="figure">
+				<img src="img/regattas/sevastopol.jpg" alt="" class="figure__img">
+				<figcaption class="figure__caption">
+					<h1 class="figure__heading">Севастополь</h1>
+					<p class="figure__text">Июль 2014</p>
+				</figcaption>
+			</figure>
+			<figure class="figure">
+				<img src="img/regattas/gelendzhik.jpg" alt="" class="figure__img">
+				<figcaption class="figure__caption">
+					<h1 class="figure__heading">Геленджик</h1>
+					<p class="figure__text">
+						Сентябрь 2014 &#8226;
+						<a href="gelendzhik.html" class="figure__link">Фото</a>
+					</p>
+				</figcaption>
+			</figure>
+		</div>
+	</div>
+	<div id="contacts" class="contacts">
+		<h1 class="main_heading main_heading_white">Контакты</h1>
+		<div class="grid">
+			<div class="col_lg_8">
+				<img src="img/contacts/yard_inside.jpg" alt="" class="contacts-img-left" />
+			</div>
+			<div class="col_lg_8">
+				<div class="flexible-frame-wrapper">
+					<iframe id="map" frameborder="0"  src="https://www.google.com/maps/embed/v1/search?q=47.207527%2C%2038.952421&key=AIzaSyAo7HPX2KgmkUsiJU_LUzkfuWrVjAhgsE4"></iframe>
+				</div>
+			</div>
+			<div class="col_lg_8">
+				<img src="img/contacts/yard_waterside.jpg" alt="" class="contacts-img-right" />
+			</div>
+		</div>
+		<ul class="contacts">
+			<li class="contacts__item">Напиши нам <a href="http://vk.com/maksim_dygay" class="contacts__link" target="_blank"><img src="img/icons/vk.png" alt="VK" class="contacts__icon"/></a></li>
+			<!-- <li class="contacts__item"><a href="#" class="contacts__link">47.12271 // 38.57087</a></li> -->
+		</ul>
+		<footer class="main-footer">
+			<section class="creds">
+				<a href="http://maksimdygai.github.io/"><img src="img/main/Maksim-Dygai-Crossed-tiny-white-10-10-2014.png" alt="Made by DYGVI" class="dygai_cred" /></a>
+			</section>
+		</footer>
 	</div>
 </body>
 </html>
